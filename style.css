@@ -1,0 +1,24 @@
+body {
+    width:100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note {
+    white-space: pre-wrap;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.box {
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+}
+
+canvas {
+    background-color: bisque;
+    border: 2px solid black;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body background="https://cdn.pixabay.com/photo/2019/04/13/20/51/music-background-4125575__340.png">
+    <center>
+        <h3 style="margin: 0px!important;" class="btn btn-success col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <span style="font-size: 20px;">Music Player</span>&nbsp;&nbsp;&nbsp; <img
+                src="https://img.icons8.com/color/30/000000/music-festival.png" />
+            <hr>
+            <div class="note text text-danger col-lg-12 col-md-12 col-sm-12 col-xs-12"><strong>Note:</strong> Move your
+                right wrist to the left of the green line to play the previous song, and move your right wrist to the
+                right of the blue line to play the next song. To pause the song move your nose above the orange line. To
+                increase the volume, press <kbd>ctrl and i</kbd>, and to decrease the volume, press <kbd>ctrl and d</kbd>.</div>
+        </h3>
+
+    </center>
+    <br><br><br><br><br><br><br><br>
+    <main>
+        <div class="box col-lg-6 col-md-6 col-sm-6 col-xs-12" align="center">
+            <img id="image"
+                src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/ae-dil-hai-mushkil-et00032168-30-08-2016-10-50-16.jpg"
+                alt="">
+            <h3 id="name"></h3>
+            <h4 id="artist"></h4>
+            <h5>Movie - <span id="movie"></span></h5>
+            <h6 id="year"></h6>
+            <button class="btn btn-warning" onclick="prev()">&leftarrow;</button> <audio src="channa-mereya.mp3" autoplay controls id="audio"></audio> <button onclick="next()" class="btn btn-warning">&rightarrow;</button>
+        </div>
+        <div id="cam_div" align="center" class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+    </main>
+
+</body>
+<script src="main.js"></script>
+
+</html>
