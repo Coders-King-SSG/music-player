@@ -74,7 +74,7 @@ var json =
         },
         {
             song: 'Vaaste',
-            artist: "Dhvani Bhanushali & Nikhil D' Souza",
+            artist: 'Dhvani Bhanushali & Nikhil D` Souza',
             movie: 'Vaaste',
             release_year: '2020',
             img: 'https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg',
@@ -137,8 +137,8 @@ function prev() {
         document.getElementById('name').innerHTML = json[i].song;
         document.getElementById('movie').innerHTML = json[i].movie;
         document.getElementById('artist').innerHTML = json[i].artist;
-        document.getElementById('image').innerHTML = json[i].img;
-        document.getElementById('year').innerHTML = json[i].release_year;
+        document.getElementById('image-movie').src = json[i].img;
+        document.getElementById('movie-year').innerHTML = json[i].release_year;
         document.getElementById('audio').src = json[i].audio_track;
     }
 }
@@ -149,10 +149,9 @@ function next() {
         document.getElementById('name').innerHTML = json[i].song;
         document.getElementById('movie').innerHTML = json[i].movie;
         document.getElementById('artist').innerHTML = json[i].artist;
-        document.getElementById('image').innerHTML = json[i].img;
-        document.getElementById('year').innerHTML = json[i].release_year;
+        document.getElementById('image-movie').src = json[i].img;
+        document.getElementById('movie-year').innerHTML = json[i].release_year;
         document.getElementById('audio').src = json[i].audio_track;
-
     }
 }
 
